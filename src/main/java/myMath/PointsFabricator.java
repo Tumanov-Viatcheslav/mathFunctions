@@ -11,7 +11,7 @@ public class PointsFabricator {
             return pointList;
         double step = (xMax - xMin) / (numberOfPoints - 1);
 
-        for (int i = 0; i <= numberOfPoints; i++) {
+        for (int i = 0; i < numberOfPoints; i++) {
             pointList.add(new Point(xMin + i * step, func.calc(xMin + i * step)));
         }
 
